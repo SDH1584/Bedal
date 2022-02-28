@@ -1,0 +1,4 @@
+@charset "UTF-8";
+
+/*지도 사용 관련 css */
+#map{width: 40%; height: 50vh; margin-top: 40px; margin-left:20px; border:solid 1px black; float: left; margin-bottom: 40px};

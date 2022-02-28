@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/****************************************************************/
+/* 초기화 관련 ***************************************************/
+/****************************************************************/
+
+/* 여백 초기화 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, 
+input, fieldset, legend, p, select, table, th, td, tr,
+textarea, button, form {margin: 0; padding: 0;}
+
+body	{font-size:12px; font-family: "맑은 고딕", 돋움, 굴림; text-align:center; color: #333; background-color: #fff;}
+
+ul, ol	{list-style-type: none; }
+a:link {text-decoration: none; color: #000000; }
+a:visited {text-decoration: none; color: #000000; }
+a:active {text-decoration: none; color: #000000; }
+a:hover {text-decoration: none; color: #000000; }
+
+/* hover */
+#header-nav1 ul>li>a:hover {color : #0ebebe;  text-decoration: underline;}
+#header-nav2 ul>li>a:hover {color : #0ebebe;}
+
+
+/* 레이아웃 */
+#wrap {margin: 0px auto; width: 1000px; background-color: #FFFFFF; }
+#header {width: 1000px; padding: 5px 0px 10px 0px; background-color: #FFFFFF; border-bottom: 1px solid #FFFFFF; }
+#header-nav {padding: 0px 0px 45px 0px; width: 1000px; border-bottom: 1px solid #A6A6A6;}
+#header-dropdown {padding: 5px 0px 25px 0px; width: 1000px; background-color: #e7e7e7;}
+#store-desc {padding: 50px 0px 50px 0px; width: 1000px; background-color: #072066; border-bottom: 2px solid #FFFFFF;}
+#store-menu {padding: 5px 0px 25px 0px; width: 1000px; background-color: #072066;}
+#content {float: left; width: 820px; margin: 20px 0px 0px 0px; background-color: #FFFFFF; }
+
+/*레이아웃: aside*/
+#aside {float: left; width: 120px; margin: 20px 0px 0px 0px; background-color: #FFFFFF; }
+#aside-main {float: right; width: 120px; margin: 20px 40px 0px 0px; background-color: #FFFFFF; }
+#aside-store-category {float: left; width: 120px; margin: 20px 0px 0px 0px; background-color: #FFFFFF; }
+
+
+
+/* 헤더(로고) */
+#header	h1 {font-size: 36px; font-weight: bold;}
+#header	h1>a {float: center; font-size: 50px; color:#072066; }
+
+/* 헤더(메뉴) */
+#header-nav1 ul{float: left; }
+#header-nav1 ul>li {float: left; width: 200px; font-size: 20px; font-weight: bold;}
+
+#header-nav2 ul {float: right;}
+#header-nav2 ul>li {float: left; margin: 5px 0px 0px 20px; width: 100px; font-size: 15px; font-weight: bold;}
+
+#header-dropdown ul {float: left;}
+#header-dropdown ul>li {padding: 0px 20px 0px 20px; float: left; font-size: 15px;}
+
+/* 헤더(가게상세(예약)) */
+#store-menu ul {float: left;}
+#store-menu ul>li {float: left; width: 250px; font-size: 15px;}
+#store-menu ul>li>a {color: #FFFFFF;}
+
+
+/* aside */
+/* aside: 왼쪽메뉴*/
+#aside ul {width: 160px;}
+#aside ul>li {margin: 5px 0px 0px 0px; padding: 15px 0px 15px 10px; font-size: 15px; text-align: center; background-color: #DDDDDD; }
+
+/* aside-main : 오른쪽메뉴*/
+#aside-main ul {width: 160px;}
+#aside-main ul>li {margin: 5px 0px 0px 0px; padding: 15px 0px 15px 0px; font-size: 15px; text-align: center; background-color: #DDDDDD; }
+
+/* aside-store-category: 왼쪽메뉴 */
+#aside-store-category ul {width: 160px;}
+#aside-store-category ul>li {margin: 5px 0px 0px 0px; padding: 5px 0px 5px 10px; font-size: 15px; text-align: center; background-color: #DDDDDD; }
+
+
+/* 메인컨텐츠(content) */
+#content-head {margin: 0px 0px 14px 0px; border-bottom: 1px solid #A6A6A6; }
+#content-head h3 {float: left; height: 30px; line-height: 30px; margin: 15px 0px 5px 0px; font-size: 20px; font-weight: bold; }
+#content-head #location {float: right; margin: 25px 0px 0px 12px; font-size: 13px; }
+#content-head #location ul>li {float: left; }
+#content-head #location ul>li:after {content: ">"; margin: 0px 5px 0px 5px;}
+#content-head #location ul>li.last:after {content: none; }
+
+/* 푸터(footer) */
+#footer{
+    margin:0 auto; /* 가운데 정렬*/
+    width: 1000px;
+    border-top: #5F0080 1px solid;
+    border-bottom: #5F0080 1px solid;
+}
+
+.footerh1>li{
+    float: left; 
+    margin-right: 20px;
+    text-align: center;
+}
+
+.footerh1{
+    margin-left: 230px;
+}
+
+
+/****************** 공통 ************************/
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* 폼 관련 */
+input[type="text"]{height: 25px; font-size:12px; font-family: "맑은 고딕", 돋움, 굴림;}
+input[type="password"]{height: 25px; font-size:12px; font-family: "맑은 고딕", 돋움, 굴림;}
+textarea{font-family: "맑은 고딕", 돋움, 굴림;}
+
+/* font *(기본값 12px) */
+.bold {font-weight: bold; }
+.text-xlarge {font-size: 18px; }
+.text-large {font-size: 15px; }
+.text-small {font-size: 10px; }
+
+.text-right {text-align: right !important;}
+.text-left {text-align: left !important;}
+.text-center {text-align: center !important;}
+
+
+/* 위치 */
+.float-r {float: right; }
+.float-l {float: left; }
+.clear{clear: both; }
+
+/* 버튼 공통*/
+.btn {
+	border: 100px solid #808080; 
+	background-color: #DDDDDD; 
+	padding: 5px 15px 5px 15px; 
+}
